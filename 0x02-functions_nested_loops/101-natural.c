@@ -3,11 +3,12 @@
 
 /**
   * main - prints the first 52 fib
-  * Return: 0.
+  * Return: 0
   */
 
 
 int main(void)
+
 {
 	int sum = 0;
 	int i;
