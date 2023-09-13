@@ -1,22 +1,21 @@
-#include "main.h"
-
+#include <sdio.h>
 
 /**
- * main - check the code.
+ * main - main function
  *
- * Return: Always 0.
+ * Return: 0
  */
-
 
 int main(void)
 {
+	int sum = 0;
+	int i;
 
-	print_times_table(3);
-	_putchar('\n');
-	print_times_table(5);
-	_putchar('\n');
-	print_times_table(98);
-	_putchar('\n');
-	print_times_table(12);
+	for (i = 0 ; i < 1024 ; i++)
+	{
+		if (i % 3 == 0 || i % 5 == 0)
+			sum = sum + i;
+	}
+	printf("%d\n", sum);
 	return (0);
 }
