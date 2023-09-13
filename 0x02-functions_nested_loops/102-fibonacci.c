@@ -2,26 +2,28 @@
 
 
 /**
-  * main - the main printing funtion
-  * less than 4000000.
+  * main - prints the first 52 fib
   * Return: 0.
   */
 
 
 int main(void)
 {
-	int i = 0;
-	long j = 1, k = 2, sum = k;
+	unsigned long int term1 = 1;
+	unsigned long int term2 = 2;
+	unsigned long int next;
+	int i;
 
-
-	while (k + j < 4000000)
+	printf("%lu, ", term1);
+	for (i = 1 ; i < 50 ; i++)
 	{
-		k += j;
-		if (k % 2 == 0)
-		sum += k;
-		j = k - j;
-		++i;
+		printf("%lu", term2);
+		next = term1 + term2;
+		term1 = term2;
+		term2 = next;
+		if (i != 49)
+			printf(", ");
 	}
-	printf("%ld", sum);
+	printf('\n');
 	return (0);
 }
