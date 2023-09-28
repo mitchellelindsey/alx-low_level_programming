@@ -7,7 +7,7 @@
  * Return: (0)
  */
 
-int prime_a(int a, inb b)
+int prime_a(int a, int b)
 {
 	if (a <= 1 || (a != b && a % b == 0))
 	{

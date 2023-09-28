@@ -11,6 +11,7 @@ int _sqrt_recursion(int n);
 int is_prime_number(int n);
 int wildcmp(char *s1, char *s2);
 int sqrt_a(int a, int b);
-int prime_a(int a, inb b);
+int prime_a(int a, int b);
+
 
 #endif
