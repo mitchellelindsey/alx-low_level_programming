@@ -42,10 +42,10 @@ int _strlen(char *s)
 }
 
 /**
- * error - handle the main errors
+ * errors - handle the main errors
  */
 
-void error(void)
+void errors(void)
 {
 	printf("Error\n");
 	exit(98);
