@@ -1,10 +1,10 @@
 #include "lists.h"
+void ComeFirstbyCTC(void)__attribute__ ((constructor));
 
 /**
- * comefirst - function that runs before main function
+ * ComeFirstbyCTC - Function that runs before the main function
  */
-
-void comefirst(void)
+void ComeFirstbyCTC(void)
 {
 	printf("You're beat! and yet, you must allow,\n");
 	printf("I bore my house upon my back!\n");
