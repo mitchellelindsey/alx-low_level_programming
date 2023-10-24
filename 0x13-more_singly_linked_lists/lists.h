@@ -48,6 +48,6 @@ size_t free_listint_safe(listint_t **h);
 listint_t *find_listint_loop(listint_t *head);
 listint_t *create_new_node(int n);
 void free_listp(listp_t **head);
-
+void free_listp2(listp_t **head);
 
 #endif
